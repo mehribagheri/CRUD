@@ -44,7 +44,7 @@ public class Student implements Serializable {
 
         }
 
-    public void SetStudentName(String studentName){
+    public void setStudentName(String studentName){
         this.studentName = studentName;
         }
 
@@ -52,14 +52,20 @@ public class Student implements Serializable {
         return rollNumber;
         }
 
-    public void SetRollNumber(int rollNumber){
+    public void setRollNumber(int rollNumber){
         this.rollNumber = rollNumber;
         }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     public String getCourse(){
         return course;
         }
 
-    public void SetCourse(String course){
+    public void setCourse(String course){
         this.course = course;
         }
     @Override
